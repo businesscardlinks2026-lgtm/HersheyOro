@@ -41,35 +41,15 @@
       background: var(--green);
       position: relative;
     }
-    .monogram {
-      width: 54px;
-      height: 54px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 24px;
-      border: 1px solid rgba(255,255,255,.38);
-      border-radius: 50%;
-      color: #fff;
-      font-family: Georgia, serif;
-      font-size: 20px;
-      letter-spacing: 1px;
-    }
-    .eyebrow {
-      margin: 0 0 9px;
-      color: #c6d9d0;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 2.1px;
-      text-transform: uppercase;
-    }
     h1 {
       margin: 0;
-      max-width: 340px;
+      max-width: none;
+      white-space: nowrap;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(27px, 7vw, 34px);
+      font-size: clamp(21px, 7vw, 34px);
       font-weight: 500;
       line-height: 1.13;
-      letter-spacing: -.5px;
+      letter-spacing: -1px;
     }
     .role {
       margin: 13px 0 0;
@@ -156,15 +136,6 @@
       background: #fff;
       color: var(--green);
     }
-    .footer {
-      padding: 15px 20px;
-      border-top: 1px solid var(--line);
-      color: #84908b;
-      font-size: 10px;
-      letter-spacing: 1.1px;
-      text-align: center;
-      text-transform: uppercase;
-    }
     @media (max-width: 360px) {
       .top, .content { padding-left: 21px; padding-right: 21px; }
       .actions { grid-template-columns: 1fr; }
@@ -174,16 +145,11 @@
 <body>
   <main class="card">
     <header class="top">
-      <div class="monogram" aria-hidden="true">HO</div>
-      <p class="eyebrow">Digital Business Card</p>
-      <h1>Hershey May<br>Bantug Oro</h1>
+      <h1>Hershey May Bantug Oro</h1>
       <p class="role">
         Assistant Vice President<br>
-        Branch Manager
-        <span class="company">
-          Bukidnon Valencia Branch<br>
-          Security Bank Corp.
-        </span>
+        Branch Manager - Valencia Bukidnon Branch<br>
+        Security Bank Corporation
       </p>
     </header>
 
@@ -215,7 +181,6 @@
         <a class="btn secondary" href="mailto:hershey.oro@securitybank.com.ph">Send Email</a>
       </div>
     </section>
-    <footer class="footer">Connect · Collaborate · Build Relationships</footer>
   </main>
 </body>
 </html>
